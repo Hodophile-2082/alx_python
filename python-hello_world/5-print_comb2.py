@@ -1,2 +1,2 @@
 for number in range(100):
-    print(f'{number:02}', end=', ' if number < 99 else '\n')
+    print("{:02}{}".format(number, ', ' if number < 99 else '\n'), end='')
