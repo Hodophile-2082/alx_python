@@ -18,3 +18,10 @@ if the last digit is greater than 5: the string and is greater than 5
 if the last digit is 0: the string and is 0
 if the last digit is less than 6 and not 0: the string and is less than 6 and not 0
 followed by a new line
+
+4
+a program that prints all numbers from 0 to 98 in decimal and in hexadecimal .
+You can only use one print function with string format
+You can only use one loop in your code
+You are not allowed to store numbers or strings in a variable
+You are not allowed to import any module
