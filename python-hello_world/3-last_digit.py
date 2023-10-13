@@ -10,7 +10,7 @@ less_than_6 = "less than 6 and not 0"
 if number < 0:
     last_digit *= -1
 
-print("The string Last digit of", number, "is", last_digit, end=" ")
+print("Last digit of", number, "is", last_digit, end=" ")
 
 if last_digit > 5:
     print("and is", greater_than_5)
