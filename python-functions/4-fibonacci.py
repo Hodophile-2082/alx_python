@@ -2,16 +2,9 @@ def fibonacci_sequence(n):
     if n <= 0:
         return []
 
-    fibonacci_list = []
-    a, b = 0, 1
-
+    fibonacci_list = [0, 1]
     while len(fibonacci_list) < n:
-        fibonacci_list.append(a)
-        a, b = b, a + b
+        next_number = fibonacci_list[-1] + fibonacci_list[-2]
+        fibonacci_list.append(next_number)
 
-    return fibonacci_list
-
-# Example usage:
-n = 10  # Replace with the desired number of Fibonacci numbers
-result = fibonacci_sequence(n)
-print(result)  # This will print the first 10 Fibonacci numbers
+    return fibonacci_list[:n]
