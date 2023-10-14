@@ -1,5 +1,13 @@
 def is_prime(number):
-  if number % 2 == 0 or number % 3 == 0 or number % 5 == 0 or number % 7 == 0 or number % 11 == 0 or number % 13 == 0 or number % 17 == 0 or number % 19 == 0 or number % 23 == 0 or number % 29 == 0 or number % 31 == 0 or number % 37 == 0 or number % 41 == 0 or number % 43 == 0 or number % 47 == 0 or number % 53 == 0 or number % 59 == 0 or number % 61 == 0 or number % 67 == 0 or number % 71 == 0 or number % 73 == 0 or number % 79 == 0 or number % 83 == 0 or number % 89 == 0 or number % 97 == 0 or number % 101 == 0 or number % 103 == 0 or number % 107 == 0 or number % 109 == 0 or number % 113 == 0 or number % 127 == 0 or number % 131 == 0 or number % 137 == 0 or number % 139 == 0 or number % 149 == 0 or number % 151 == 0 or number % 157 == 0 or number % 163 == 0 or number % 167 == 0 or number % 173 == 0 or number % 179 == 0 or number % 181 == 0 or number % 191 == 0 or number % 193 == 0 or number % 197 == 0 or number % 199 == 0:
-    return False
-  else:
+    if number <= 1:
+        return False
+    if number == 2:
+        return True
+    if number % 2 == 0:
+        return False
+    
+    for i in range(3, int(number**0.5) + 1, 2):
+        if number % i == 0:
+            return False
     return True
+
