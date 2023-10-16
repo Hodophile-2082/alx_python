@@ -1,15 +1,11 @@
-# Assign values to variables a and b in two different lines
-a = 1
-b = 2
+def add(a, b):
+    return a + b
 
-# Import the add function from add_0.py
-import add_0
-
-# Calculate the result using the imported add function
-result = add_0.add(a, b)
-
-# Print the result using string formatting
-print(f"{a} + {b} = {result}")
+if __name__ == "__main__":
+    x = 5
+    y = 10
+    result = add(x, y)
+    print(f"The sum of {x} and {y} is {result}")
 
 
 
