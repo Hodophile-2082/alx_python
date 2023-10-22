@@ -6,11 +6,11 @@ def print_arguments():
 
     # Print the number of arguments
     if num_args == 0:
-        print("Number of argument(s) .")
+        print("{} arguments :".format(num_args))
     elif num_args == 1:
-        print("Number of argument(s) followed by argument:")
+         print("{} argument :".format(num_args))
     else:
-        print(f"Number of argument(s) followed by arguments:")
+         print("{} arguments :".format(num_args))
 
     # Print each argument
     for i in range(num_args):
