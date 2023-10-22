@@ -7,7 +7,7 @@ if __name__ == "__main__":
     a = 1
     b = 2
     result = add(a, b)
-    message = "The sum of {} and {} is {}".format(a, b, result)
+    message = "{} + {} = {}".format(a, b, result)
 else:
     message = "0-add.py doesn't contain: ['__name__']"
 
