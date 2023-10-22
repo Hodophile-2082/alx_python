@@ -1,4 +1,4 @@
-import variable_load_2  # Import the module
+from variable_load_2 import a # Import the module
 
 # Access and print the variable
 if __name__ == "__main__":
