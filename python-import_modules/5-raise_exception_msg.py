@@ -1,6 +1,6 @@
-def raise_exception_msg(message="C is fun"):
+def raise_exception_msg(message=""):
     if message:
-        raise NameException(message)
+        raise (message)
     else:
-        raise NameException("A NameException occurred")
+        raise ("A NameException occurred")
 
