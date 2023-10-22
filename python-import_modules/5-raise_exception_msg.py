@@ -1,6 +1,6 @@
+class NameException(Exception):
+    pass
+
 def raise_exception_msg(message=""):
-    if message:
-        raise (message)
-    else:
-        raise ("A NameException occurred")
+    raise NameException(message)
 
