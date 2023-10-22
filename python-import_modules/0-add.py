@@ -1,11 +1,13 @@
+#!/usr/bin/python3
 def add(a, b):
     return a + b
 
+from add_0 import add
 if __name__ == "__main__":
-    x = 5
-    y = 10
-    result = add(x, y)
-    message = "The sum of {} and {} is {}".format(x, y, result)
+    a = 1
+    b = 2
+    result = add(a, b)
+    message = "The sum of {} and {} is {}".format(a, b, result)
 else:
     message = "0-add.py doesn't contain: ['__name__']"
 
